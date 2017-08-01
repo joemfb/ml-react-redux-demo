@@ -4,6 +4,7 @@ import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import Home from './home'
 import About from './about'
+import Search from './search'
 
 import './app.css'
 
@@ -30,6 +31,7 @@ const App = () => (
 
     <main>
       <Route exact path="/" component={Home} />
+      <Route exact path="/search" component={Search} />
       <Route exact path="/about-us" component={About} />
     </main>
   </div>
